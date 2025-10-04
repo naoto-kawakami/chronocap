@@ -20,8 +20,7 @@ def main() -> None:
     project_dir = src_dir.parent
     config_dir = project_dir / "config"
     config_path = config_dir / "core.yaml"
-    encoding = "utf-8"
-    config = Config.from_yaml(config_path, encoding=encoding)
+    config = Config.from_yaml(config_path)
 
     out_dir = project_dir / "img"
     out_dir.mkdir(parents=True, exist_ok=True)
