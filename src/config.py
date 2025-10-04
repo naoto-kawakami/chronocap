@@ -9,7 +9,7 @@ from yaml import safe_load
 
 class Config(BaseModel):
     interval_minutes: int = Field(
-        1, ge=0, description="Interval in minutes, must be >= 0"
+        1, ge=1, description="Interval in minutes, must be >= 1"
     )
     device_id: int = Field(0, ge=0, description="Device ID, must be >= 0")
     filename_format: str = r"%Y-%m-%d_%H-%M-%S"

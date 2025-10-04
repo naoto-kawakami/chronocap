@@ -1,4 +1,4 @@
-# Interval in minutes, must be >= 0.
+# Interval in minutes, must be >= 1.
 interval_minutes: 1
 
 # Device ID, must be >= 0.
