@@ -37,7 +37,17 @@ def main() -> None:
     )
 
     try:
-        print("Starting scheduled job...")
+        print(
+            "Starting scheduled job...",
+            "",
+            f"Interval: {config.interval_minutes} minute(s)",
+            f"Output directory: {out_dir}",
+            f"Device ID: {config.device_id}",
+            f"File name: {config.filename_format}.{config.file_type}",
+            f"Capture time range: {config.start_time} - {config.end_time}",
+            "",
+            sep="\n",
+        )
         schedule.every(config.interval_minutes).minutes.do(job(params))
         print("Press Ctrl+C to stop.")
 
