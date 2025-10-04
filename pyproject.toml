@@ -1,7 +1,7 @@
 [project]
 name = "chronocap"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python project for periodically saving camera images based on configurable settings."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
