@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # img directory
-img/
+img/*
