@@ -1,0 +1,16 @@
+# Interval in minutes, must be >= 0.
+interval_minutes: 1
+
+# Device ID, must be >= 0.
+device_id: 0
+
+# File type, either "png" or "jpg".
+file_type: "png"
+
+# Filename format using datetime directives.
+filename_format: "%Y-%m-%d_%H-%M-%S"
+
+# Pictures will only be taken between these times each day.
+start_time: "09:00:00"
+end_time: "18:00:00"
+time_format: "%H:%M:%S"
